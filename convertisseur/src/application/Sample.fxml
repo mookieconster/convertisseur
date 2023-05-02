@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Weight">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="cboWeight" layoutX="39.0" layoutY="92.0" onAction="#ConvertW1" prefHeight="27.0" prefWidth="161.0" />
+                        <TextField fx:id="txtWeight" layoutX="39.0" layoutY="50.0" onKeyReleased="#ConvertW1" onKeyTyped="#verifNum" />
+                        <Text layoutX="216.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=" />
+                        <TextField fx:id="txtWeight2" layoutX="232.0" layoutY="50.0" onKeyReleased="#ConvertW2" onKeyTyped="#verifNum" />
+                        <ComboBox fx:id="cboWeight2" layoutX="232.0" layoutY="92.0" onAction="#ConvertW2" prefHeight="27.0" prefWidth="161.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tab" text="Length">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="cboLength" layoutX="30.0" layoutY="94.0" onAction="#ConvertL1" prefHeight="27.0" prefWidth="164.0" />
+                        <TextField fx:id="txtLength" layoutX="31.0" layoutY="55.0" onKeyReleased="#ConvertL1" onKeyTyped="#verifNum" />
+                        <Text layoutX="206.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=" />
+                        <TextField fx:id="txtLength1" layoutX="226.0" layoutY="55.0" onKeyReleased="#ConvertL2" onKeyTyped="#verifNum" />
+                        <ComboBox fx:id="cboLength1" layoutX="225.0" layoutY="94.0" onAction="#ConvertL2" prefHeight="27.0" prefWidth="164.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Volume">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="cboVolume" layoutX="27.0" layoutY="93.0" onAction="#ConvertV1" prefHeight="27.0" prefWidth="160.0" />
+                        <TextField fx:id="txtVolume" layoutX="26.0" layoutY="54.0" onKeyReleased="#ConvertV1" onKeyTyped="#verifNum" />
+                        <Text layoutX="206.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=" />
+                        <TextField fx:id="txtVolume2" layoutX="228.0" layoutY="54.0" onKeyReleased="#ConvertV2" onKeyTyped="#verifNum" />
+                        <ComboBox fx:id="cboVolume2" layoutX="229.0" layoutY="93.0" onAction="#ConvertV2" prefHeight="27.0" prefWidth="160.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Time">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtTemps" layoutX="24.0" layoutY="56.0" onKeyReleased="#ConvertT2" onKeyTyped="#verifNum" />
+                        <TextField fx:id="txtTemps2" layoutX="220.0" layoutY="56.0" onKeyReleased="#ConvertT2" onKeyTyped="#verifNum" />
+                        <Label layoutX="198.0" layoutY="61.0" text="=" />
+                        <ComboBox fx:id="cboTemps" layoutX="24.0" layoutY="101.0" onAction="#ConvertT1" prefHeight="27.0" prefWidth="161.0" />
+                        <ComboBox fx:id="cboTemps2" layoutX="220.0" layoutY="101.0" onAction="#ConvertT2" prefHeight="27.0" prefWidth="161.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
